@@ -1,8 +1,8 @@
-#import time
+import time
 
 vet = [1,0,34,12,7,8,525]
 
-#start = time.clock()
+start = time.process_time()
 
 def quick(vet):
   if len(vet) <=1:
@@ -21,7 +21,5 @@ def quick(vet):
       # print(lista2)
   return (quick(lista1) + pivo + quick(lista2))
 
-# end = time.clock() 
-
 print(quick(vet))
-#print(end - start)
+print(start)
