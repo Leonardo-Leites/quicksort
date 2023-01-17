@@ -65,7 +65,7 @@ def medianaLomuto(vet):
   if len(vet) <=1:
     return vet
 
-  aux = [vet[0], vet[int(len(vet)/2)], vet[tamanho-1]]
+  aux = [vet[0], vet[int(len(vet)/2)], vet[-1]]
   aux.sort()
 
   valueAux = vet[0]
@@ -140,7 +140,7 @@ def  quickLomutoAleatorio():
     swap = 0
     vet = results[count]
     
-    aux = random.randint(1, len(vet))    
+    aux = random.randint(0, len(vet)-1)    
     vet = vet[1:]
     valueAux = vet[0]
     vet[0] = vet[aux]
@@ -219,7 +219,7 @@ def  quickHoareMediana():
     
     vet = vet[1:]
 
-    aux = [vet[0], vet[int(len(vet)/2)], vet[tamanho-1]]
+    aux = [vet[0], vet[int(len(vet)/2)], vet[-1]]
     aux.sort()
 
     valueAux = vet[0]
